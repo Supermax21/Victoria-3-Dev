@@ -29,12 +29,14 @@ je_encourage_boer_migration_into_the_oranje_river_basin = {
 			}
 	}
 	is_shown_when_inactive = {
+		exists = c:ORA
 		THIS = c:ORA
 		NOT = {
 			owns_entire_state_region = STATE_VRYSTAAT
 		}
 	}
 	possible = {
+		exists = c:ORA
 		THIS = c:ORA
 		NOT = {
 			owns_entire_state_region = STATE_VRYSTAAT
@@ -55,9 +57,11 @@ je_the_forming_of_the_oranje_vrystaat = {
 			owns_entire_state_region = STATE_VRYSTAAT
 	}
 	is_shown_when_inactive = {
+		exists = c:ORA
 		THIS = c:ORA
 	}
 	possible = {
+		exists = c:ORA
 		THIS = c:ORA
 	}
 	on_complete = {
@@ -80,9 +84,11 @@ je_climax_of_the_great_trek = {
 			}
 	}
 	is_shown_when_inactive = {
+		exists = c:TRN
 		THIS = c:TRN
 	}
 	possible = {
+		exists = c:TRN
 		THIS = c:TRN
 	}
 	on_complete = {
@@ -124,9 +130,11 @@ je_form_griqualand_west = {
 		}
 	}
 	is_shown_when_inactive = {
+		exists = c:SAF
 		THIS = c:SAF
 	}
 	possible = {
+		exists = c:SAF
 		THIS = c:SAF
 	}
 	on_complete = {
@@ -152,9 +160,11 @@ je_colonize_bechuanaland = {
 		}
 	}
 	is_shown_when_inactive = {
+		exists = c:SAF
 		THIS = c:SAF
 	}
 	possible = {
+		exists = c:SAF
 		THIS = c:SAF
 		NOT = {
 			c:SAF = {
@@ -180,9 +190,11 @@ je_anglo_zulu_war = {
 		}
 	}
 	is_shown_when_inactive = {
+		exists = c:SAF
 		THIS = c:SAF
 	}
 	possible = {
+		exists = c:SAF
 		THIS = c:SAF
 	}
 	on_complete = {
@@ -225,9 +237,11 @@ je_establish_the_orange_river_soverignty = {
 		}
 	}
 	is_shown_when_inactive = {
+		exists = c:SAF
 		THIS = c:SAF
 	}
 	possible = {
+		exists = c:SAF
 		THIS = c:SAF
 	}
 	on_complete = {
@@ -254,9 +268,11 @@ je_establish_the_traansval_colony = {
 			}	
 			AND = {
 				year > 1874
+				exists = c:SAF
 				c:SAF = {
 					is_ai = yes
 				}
+				exists = c:TRN
 				c:TRN = {
 					is_ai = yes
 				}
@@ -264,9 +280,11 @@ je_establish_the_traansval_colony = {
 		}
 	}
 	is_shown_when_inactive = {
+		exists = c:SAF
 		THIS = c:SAF
 	}
 	possible = {
+		exists = c:SAF
 		THIS = c:SAF
 	}
 	on_complete = {
@@ -324,11 +342,19 @@ je_first_boer_war = {
 	}
 	is_shown_when_inactive = {
 		OR = {
-			THIS = c:TRN
-			THIS = c:ORA
+			AND = {
+				exists = c:TRN
+				THIS = c:TRN
+			}
+			AND = {
+				exists = c:ORA
+				THIS = c:ORA
+			}
 		}
 	}
 	possible = {
+		exists = c:ORA
+		exists = c:TRN
 		c:ORA = {
 			is_subject_of = c:SAF
 		}
@@ -384,8 +410,14 @@ je_second_boer_war = {
 	}
 	is_shown_when_inactive = {
 		OR = {
-			THIS = c:TRN
-			THIS = c:ORA
+			AND = {
+				exists = c:TRN
+				THIS = c:TRN
+			}
+			AND = {
+				exists = c:ORA
+				THIS = c:ORA
+			}
 		}
 	}
 	possible = {
