@@ -1,0 +1,7 @@
+﻿l_english:
+
+# Guano
+
+ building_guano_mine:0 "Guano Mines"
+ building_guano_mine_lens_option:0 "Expand $building_guano_mine$"
+ bg_guano_mining:0 "Guano Mines"
