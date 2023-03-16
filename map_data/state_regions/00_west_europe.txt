@@ -492,6 +492,7 @@ STATE_WEST_COUNTRY = {
         bg_sulfur_mining = 60
         bg_logging = 6
         bg_fishing = 9
+        bg_copper_mining = 10
     }
     naval_exit_id = 3028
 }

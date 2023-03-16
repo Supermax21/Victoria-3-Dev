@@ -1,11 +1,11 @@
 ﻿l_english:
 
 ### Guano
- pmg_mining_equipment_building_coal_mine:0 "Mining Equipment"
- pm_picks_and_shovels_building_coal_mine:0 "Picks and Shovels"
- pmg_ownership_capital_building_coal_mine:1 "$pmg_ownership$"
- pm_merchant_guilds_building_coal_mine:1 "$pm_merchant_guilds$"
- pm_privately_owned_building_coal_mine:1 "$pm_privately_owned$"
- pm_publicly_traded_building_coal_mine:1 "$pm_publicly_traded$"
- pm_government_run_building_coal_mine:1 "$pm_government_run$"
- pm_worker_cooperative_building_coal_mine:1 "$pm_worker_cooperative$"
+ pmg_mining_equipment_building_guano_mine:0 "Mining Equipment"
+ pm_picks_and_shovels_building_guano_mine:0 "Picks and Shovels"
+ pmg_ownership_capital_building_guano_mine:1 "$pmg_ownership$"
+ pm_merchant_guilds_building_guano_mine:1 "$pm_merchant_guilds$"
+ pm_privately_owned_building_guano_mine:1 "$pm_privately_owned$"
+ pm_publicly_traded_building_guano_mine:1 "$pm_publicly_traded$"
+ pm_government_run_building_guano_mine:1 "$pm_government_run$"
+ pm_worker_cooperative_building_guano_mine:1 "$pm_worker_cooperative$"

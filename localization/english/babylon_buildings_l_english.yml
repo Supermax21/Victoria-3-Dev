@@ -5,3 +5,15 @@
  building_guano_mine:0 "Guano Mines"
  building_guano_mine_lens_option:0 "Expand $building_guano_mine$"
  bg_guano_mining:0 "Guano Mines"
+
+# Silver
+
+ building_silver_mine:0 "Silver Mines"
+ building_silver_mine_lens_option:0 "Expand $building_silver_mine$"
+ bg_silver_mining:0 "Silver Mines"
+
+# Copper
+
+ building_copper_mine:0 "Copper Mines"
+ building_copper_mine_lens_option:0 "Expand $building_copper_mine$"
+ bg_copper_mining:0 "Copper Mines"

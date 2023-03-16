@@ -1,0 +1,20 @@
+silver = {
+	texture = "gfx/interface/icons/goods_icons/silver.dds"
+	cost = 80
+	category = luxury
+	tradeable = no
+	fixed_price = yes
+	prestige_factor = 2.5
+}
+
+copper = {
+	texture = "gfx/interface/icons/goods_icons/copper.dds"
+	cost = 60
+	category = industrial
+	
+	traded_quantity = 7.5
+	convoy_cost_multiplier = 0.75
+	
+	consumption_tax_cost = 200
+	prestige_factor = 2.5
+}

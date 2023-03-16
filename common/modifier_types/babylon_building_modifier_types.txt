@@ -67,3 +67,13 @@ building_subsistence_fishing_villages_throughput_mult = {
     good = yes
     percent = yes
 }
+
+building_output_silver_add = {
+    good = yes
+    percent = yes
+}
+
+building_output_copper_add = {
+    good = yes
+    percent = yes
+}

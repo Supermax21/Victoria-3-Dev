@@ -334,6 +334,7 @@ STATE_LA_PAZ = {
     capped_resources = {
         bg_logging = 20
         bg_gold_mining = 4
+        bg_silver_mining = 10
     }
     resource = {
         type = "bg_rubber"
