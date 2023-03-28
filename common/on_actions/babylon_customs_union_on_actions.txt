@@ -171,3 +171,50 @@ on_babylon_liberate_subject_diplo_play_start = {
 		}
 	}
 }
+
+# Root = Country
+on_babylon_customs_union_update = {
+	effect = {
+		if = {
+			limit = {
+				market.owner = root
+				market.participants > 1
+			}
+
+			debug_log = "customs union update beginning"
+			debug_log_scopes = yes
+			market = {
+				set_variable = {
+					name = total_prestige
+					value = 1
+				}
+
+				every_scope_country = {
+					market = {
+						change_variable = {
+							name = total_prestige
+							add = prev.prestige
+							add = 50
+						}
+					}
+					debug_log = "customs union update prestige"
+					debug_log_scopes = yes
+				}
+			}
+			market = {
+				every_scope_country = {
+					debug_log = "customs union update percentage"
+					debug_log_scopes = yes
+					set_variable = {
+						name = mint_percentage
+						value = {
+							add = prestige
+							add = 50
+							divide = market.var:total_prestige
+						}
+					}
+				}
+			}
+		}
+	}
+}

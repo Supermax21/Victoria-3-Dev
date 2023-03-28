@@ -20,6 +20,7 @@ on_acquired_technology = {
 	}
 }
 
+# Root = Diplomatic Play
 on_diplo_play_start = {
 	on_actions = {
 		on_babylon_liberate_subject_diplo_play_start
@@ -28,24 +29,31 @@ on_diplo_play_start = {
 	}
 }
 
+# Root = Country
 on_monthly_pulse_country = {
 	on_actions = {
 		on_babylon_monthly_pulse_country
+		on_babylon_customs_union_update
 	}
 }
 
+# Root = Diplomatic Play
 on_diplo_play_war_start = {
 	on_actions = {
 		on_babylon_contain_threat_diplo_play_war_start
 	}
 }
 
+# Root = Releasing Country
+# scope:target = Released Country
 on_country_released_as_independent = {
 	on_actions = {
 		on_babylon_country_released_as_independent
 	}
 }
 
+# Root = Releasing Country
+# scope:target = Released Country
 on_country_released_as_own_subject = {
 	on_actions = {
 		on_babylon_country_released_as_own_subject

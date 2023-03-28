@@ -1,4 +1,4 @@
-﻿ # Root = Diplomatic Play
+﻿# Root = Diplomatic Play
 on_babylon_true_neutral_diplo_play_start = {
 	effect = {
 		if = {

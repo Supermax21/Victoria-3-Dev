@@ -1,4 +1,5 @@
-﻿on_babylon_transfer_diplo_play_start = {
+﻿# Root = Diplomatic Play
+on_babylon_transfer_diplo_play_start = {
 	effect = {
 		if = {
 			limit = {
