@@ -35,7 +35,7 @@ weekly_country_multiply_minting = {
 
 		add_modifier = { 
 			name = modifier_customs_union_minting
-			multiplier = scope:target_country.var:customs_mint_add_var
+			multiplier = prev.var:customs_mint_add_var
 			days = 7
 		}
 	}

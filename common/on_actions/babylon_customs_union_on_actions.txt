@@ -185,33 +185,90 @@ on_babylon_customs_union_update = {
 			debug_log_scopes = yes
 			market = {
 				set_variable = {
-					name = total_prestige
-					value = 1
+					name = total_projection
+					value = 0
+				}
+				set_variable = {
+					name = total_gdp
+					value = 0
 				}
 
 				every_scope_country = {
 					market = {
 						change_variable = {
-							name = total_prestige
-							add = prev.prestige
-							add = 50
+							name = total_projection
+							add = {
+								add = prev.modifier:country_army_power_projection_add
+								multiply = {
+									add = 1
+									add = prev.modifier:country_army_power_projection_mult
+								}
+							}
+						}
+						change_variable = {
+							name = total_gdp
+							add = prev.gdp
 						}
 					}
 					debug_log = "customs union update prestige"
 					debug_log_scopes = yes
 				}
-			}
-			market = {
+
 				every_scope_country = {
 					debug_log = "customs union update percentage"
 					debug_log_scopes = yes
 					set_variable = {
-						name = mint_percentage
+						name = mint_percentage 
 						value = {
-							add = prestige
-							add = 50
-							divide = market.var:total_prestige
+							add = this.modifier:country_army_power_projection_add
+							multiply = {
+								add = 1
+								add = this.modifier:country_army_power_projection_mult
+							}
+							divide = market.var:total_projection
 						}
+					}
+
+					add_modifier = { 
+						name = modifier_customs_union_minting
+						multiplier = this.modifier:country_army_power_projection_add
+						months = 1
+					}
+
+					add_modifier = { 
+						name = modifier_customs_union_minting
+						multiplier = this.modifier:country_army_power_projection_mult
+						months = 1
+					}
+
+					add_modifier = { 
+						name = modifier_customs_union_minting
+						multiplier = var:mint_percentage
+						months = 1
+					}
+
+					set_variable = {
+						name = mint_add
+						value = {
+							add = market.var:total_gdp
+							multiply = 0.9
+							divide = 1000
+							multiply = var:mint_percentage
+							#add = {
+							#	add = gdp
+							#	divide = 1000
+							#	multiply = 0.1
+							#}
+							#subtract = {
+							#	add = gdp
+							#	divide = 1000
+							#}
+						}
+					}
+					add_modifier = { 
+						name = modifier_customs_union_minting
+						multiplier = var:mint_add
+						months = 1
 					}
 				}
 			}
