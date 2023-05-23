@@ -1,0 +1,27 @@
+pm_military_academy = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			country_military_tech_spread_mult = 0.25
+
+		level_scaled = {
+			building_employment_officers_add = 500
+			building_employment_servicemen_add = 4500
+		}
+	}
+}
+
+pm_research_institute = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			country_military_tech_spread_mult = 0.25
+
+		level_scaled = {
+			building_employment_officers_add = 500
+			building_employment_servicemen_add = 4500
+		}
+	}
+}
