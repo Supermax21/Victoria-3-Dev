@@ -4,5 +4,6 @@ pmg_academic_focus = {
 		pm_military_academy
 		pm_research_institute
 		pm_liberal_arts
+		pm_general_studies
 	}
 }
